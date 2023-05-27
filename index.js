@@ -6,6 +6,12 @@ const connection = require("./database/database");
 const categoriesController = require('./categories/categoriesController')
 const articlesController = require('./articles/articlesController')
 
+
+// Importar os Models
+const Article = require('./articles/Article')
+const Category = require('./categories/Category')
+
+
 //Database
 connection
     .authenticate()
